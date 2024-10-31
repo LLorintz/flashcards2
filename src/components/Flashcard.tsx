@@ -13,7 +13,7 @@ const Flashcard = ({flashcard}:flashcardprops) => {
   const [height, setHeight] = useState(0)
 
   const handleFlip=()=>{
-    setFlip(!flip)
+    setFlip((prevFlip) => !prevFlip)
   }
 
 
